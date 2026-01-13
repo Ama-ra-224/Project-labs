@@ -29,18 +29,28 @@ All activities were performed **ethically and with proper authorization**.
 # Shows available network interfaces, IP addresses, and MAC addresses.
 ifconfig
 
+![ifconfig output](screenshots/ifconfig.png)
+
 # 2. Display routing table
 # Shows how packets are routed within the network and default gateways.
 ip route
+
+![ip route output](screenshots/ip-route.png)
 
 # 3. View DNS configuration
 # Displays configured DNS servers used for name resolution.
 cat /etc/resolv.conf
 
+![resolv.conf output](screenshots/resolv-conf.png)
+
 # 4. Capture network traffic
 # Captures all traffic on the eth0 interface and saves it to a PCAP file.
 sudo tcpdump -i eth0 -s 0 -w cyber.pcap
 
+![tcpdump capture](screenshots/tcpdump.png)
+
 # 5. Analyze captured traffic
 # Opens the PCAP file in Wireshark for graphical traffic analysis.
 wireshark cyber.pcap
+
+![Wireshark analysis](screenshots/wireshark.png)
